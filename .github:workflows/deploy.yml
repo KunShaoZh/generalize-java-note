@@ -1,0 +1,14 @@
+name: Deploy MkDocs
+on:
+  push:
+    branches: [main]  # 主分支推送时触发
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      #- run: pip install mkdocs-material  # 安装依赖
+      - run: mkdocs gh-deploy --force

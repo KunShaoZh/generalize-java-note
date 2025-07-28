@@ -1,3 +1,6 @@
+site_url: https://KunShaoZh.github.io/generalize-java-note/ #网站最终发布的url
+repo_url: https://github.com/KunShaoZh/generalize-java-note  #源代码仓库github地址
+edit_uri: edit/main/docs/ #定义 "Edit this page" 按钮的链接路径，允许用户直接从网站跳转到 GitHub 编辑对应的Markdown 文件  
 site_name: KunShaoZh  # 网站名称
 theme: material      # 使用 Material 主题
 
@@ -5,6 +8,7 @@ plugins:
   - search           # 内置搜索功能
   - mermaid2         # mermaid思维导图支持
   - markmap          # markmap思维导图
+  - git-revision-date-localized  # 显示页面最后更新时间
 
 markdown_extensions:
   - pymdownx.superfences  # 增强代码块支持
