@@ -1,0 +1,19 @@
+site_name: KunShaoZh  # 网站名称
+theme: material      # 使用 Material 主题
+
+plugins:
+  - search           # 内置搜索功能
+  - mermaid2         # mermaid思维导图支持
+  - markmap          # markmap思维导图
+
+markdown_extensions:
+  - pymdownx.superfences  # 增强代码块支持
+  - pymdownx.highlight    # 代码高亮风格
+  - attr_list             # 支持 Markdown 属性
+  - codehilite       # 代码高亮
+
+extra_css:
+  - css/extra.css        # 自定义 CSS（可选）
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js  # 加载 Mermaid JS（可选）
